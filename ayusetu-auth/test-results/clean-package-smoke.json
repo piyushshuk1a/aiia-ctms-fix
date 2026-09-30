@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checks": [
+    "Distributed archive contains neither runtime credentials nor a database",
+    "Included initializer creates a fresh local secret from the secret-free example",
+    "Prebuilt extracted package starts through python -m server.run with installed dependencies",
+    "Actual HTTP server blocks unauthenticated clinical APIs and redirects protected HTML",
+    "Login HTML and all five local assets are served with the configured security/cache headers and seed-free client",
+    "Fresh seeded PI authenticates over real HTTP and receives HttpOnly session cookies",
+    "Clean server seed reconciles 208 records, 190/400 enrollment, and ten safety cases",
+    "Session lookup works and configuration/database/source paths are not public assets",
+    "Real HTTP logout revokes access and clears the active browser-client session"
+  ],
+  "count": 9,
+  "method": "Clean extraction, generated .env, real Uvicorn HTTP, installed runtime dependencies; no native browser in this smoke check."
+}

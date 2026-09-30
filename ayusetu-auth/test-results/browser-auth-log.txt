@@ -1,0 +1,28 @@
+PASS Login-first desktop renders with no protected data before verification
+PASS Injected network failure is distinct from invalid credentials and never reports successful login
+PASS Show-password control and generic failed login do not grant access
+PASS PI login opens Overview and preserves the 190/400 baseline without a role selector
+PASS Existing source-linked Varanasi operational-risk drawer remains functional
+PASS Coordinator lands on Participants & Visits with AYU-001 Delhi-only records
+PASS Consent gate, recorded consent, enrollment, three visits and server audit work through UI
+PASS UI remount restores server identity and the persisted enrollment through the session endpoint
+PASS Seriousness criterion is mandatory; UI safety capture creates the urgent PV action
+PASS Monitor landing and coordinator-to-monitor query handoff preserve independent review
+PASS PV password verification creates only a limited challenge; wrong OTP cannot load clinical records
+PASS OTP-verified PV account completes its authorized clinical review with authenticated audit identity
+PASS Ethics landing, committee decision history, and server-authorized document download work in UI
+PASS Site readiness gates, evidence recording, and gated activation remain intact
+PASS Server-authorized assistant reflects 191/400 and links current supporting records
+PASS Regulator lands on Reports; de-identified audit and scoped CSV download work while direct writes return 403
+PASS Regulator can change their own password without privilege controls; sessions revoke and new login works
+PASS Overlong pasted passwords remain intact in the input and are rejected explicitly, never silently truncated
+PASS Forgot/reset screens use a single-use delivered link, enforce matching passwords, and require normal login
+PASS OTP-verified Admin creates scoped account; setup link sets a password without a default or public signup
+PASS Administrative account status changes and restricted security history render and persist
+PASS All eleven clinical and administration destinations render without desktop page overflow
+PASS Admin reset requires confirmation and restores clinical baseline without erasing audit or account changes
+PASS All eleven destinations fit a 390px mobile viewport with contained table scrolling
+PASS Mobile assistant dialog traps keyboard focus and Escape dismisses it
+PASS Logout removes prior-user UI and assistant history before another scoped account signs in on mobile
+PASS Editing the browser user role does not grant backend administrative access
+PASS Browser-driven journey completes without JavaScript page errors

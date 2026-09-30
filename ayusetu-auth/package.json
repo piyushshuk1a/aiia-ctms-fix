@@ -1,0 +1,1 @@
+{"name":"ayusetu-authenticated-prototype","version":"2.0.0","private":true,"description":"Server-authenticated synthetic AYUSETU CTMS prototype","scripts":{"build":"node scripts/build.cjs","test":"node --test tests/domain.test.cjs","start":"python -m server.run","dev":"python -m server.run"},"devDependencies":{"typescript":"5.8.3"}}

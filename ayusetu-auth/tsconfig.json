@@ -1,0 +1,1 @@
+{"compilerOptions":{"target":"ES2021","module":"none","jsx":"react","strict":true,"noImplicitAny":false,"lib":["ES2021","DOM","DOM.Iterable"],"outFile":"build/app.js","skipLibCheck":true},"files":["src/react.d.ts","src/client-domain.ts","src/auth-service.ts","src/auth-ui.tsx","src/ui.tsx"]}

@@ -1,0 +1,768 @@
+{
+  "mode": "real_http_backend_with_browser_transport_and_router_adapter",
+  "status": "passed",
+  "passed": 28,
+  "checks": [
+    "Login-first desktop renders with no protected data before verification",
+    "Injected network failure is distinct from invalid credentials and never reports successful login",
+    "Show-password control and generic failed login do not grant access",
+    "PI login opens Overview and preserves the 190/400 baseline without a role selector",
+    "Existing source-linked Varanasi operational-risk drawer remains functional",
+    "Coordinator lands on Participants & Visits with AYU-001 Delhi-only records",
+    "Consent gate, recorded consent, enrollment, three visits and server audit work through UI",
+    "UI remount restores server identity and the persisted enrollment through the session endpoint",
+    "Seriousness criterion is mandatory; UI safety capture creates the urgent PV action",
+    "Monitor landing and coordinator-to-monitor query handoff preserve independent review",
+    "PV password verification creates only a limited challenge; wrong OTP cannot load clinical records",
+    "OTP-verified PV account completes its authorized clinical review with authenticated audit identity",
+    "Ethics landing, committee decision history, and server-authorized document download work in UI",
+    "Site readiness gates, evidence recording, and gated activation remain intact",
+    "Server-authorized assistant reflects 191/400 and links current supporting records",
+    "Regulator lands on Reports; de-identified audit and scoped CSV download work while direct writes return 403",
+    "Regulator can change their own password without privilege controls; sessions revoke and new login works",
+    "Overlong pasted passwords remain intact in the input and are rejected explicitly, never silently truncated",
+    "Forgot/reset screens use a single-use delivered link, enforce matching passwords, and require normal login",
+    "OTP-verified Admin creates scoped account; setup link sets a password without a default or public signup",
+    "Administrative account status changes and restricted security history render and persist",
+    "All eleven clinical and administration destinations render without desktop page overflow",
+    "Admin reset requires confirmation and restores clinical baseline without erasing audit or account changes",
+    "All eleven destinations fit a 390px mobile viewport with contained table scrolling",
+    "Mobile assistant dialog traps keyboard focus and Escape dismisses it",
+    "Logout removes prior-user UI and assistant history before another scoped account signs in on mobile",
+    "Editing the browser user role does not grant backend administrative access",
+    "Browser-driven journey completes without JavaScript page errors"
+  ],
+  "errors": [],
+  "apiCalls": [
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/session",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/auth/session",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/auth/refresh",
+      "method": "POST",
+      "status": 401
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 401
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/search?q=Varanasi",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/activity",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/search?q=SCR-001",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 422
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/session",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/search?q=AYU-001-S1-001",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/activity",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 422
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/otp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/outbox",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/otp/verify",
+      "method": "POST",
+      "status": 401
+    },
+    {
+      "path": "/api/auth/otp/verify",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/search?q=AE-011",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/documents/DOC-RENEWAL/download",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 422
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/assistant",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/assistant",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/exports?kind=Audit&format=json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/exports?kind=Recruitment&format=csv&trialId=AYU-001&siteId=S3",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/security",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/change-password",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/forgot-password",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/outbox",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/reset-password",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/otp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/outbox",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/otp/verify",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/accounts",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/outbox",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/reset-password",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/otp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/outbox",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/otp/verify",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/accounts/u-582760296e4cd5b29a49d3cb",
+      "method": "PATCH",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/security-log",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/operations",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/records",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/accounts",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/demo/accounts",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/bootstrap",
+      "method": "GET",
+      "status": 200
+    }
+  ]
+}

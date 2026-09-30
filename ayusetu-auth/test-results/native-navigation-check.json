@@ -1,0 +1,5 @@
+{
+  "status": "blocked",
+  "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:5173/login\nCall log:\n  - navigating to \"http://127.0.0.1:5173/login\", waiting until \"load\"\n",
+  "note": "No browser policy was changed. The full native browser scenario path was not executed."
+}

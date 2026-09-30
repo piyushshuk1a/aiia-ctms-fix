@@ -1,0 +1,120 @@
+{
+  "product": "AYUSETU",
+  "label": "Synthetic demo data \u00b7 unvalidated export",
+  "scope": {},
+  "generatedAt": "2026-09-29T22:08:22.003844+00:00",
+  "clinicalClock": "2026-09-28T04:00:00.000Z",
+  "recordCount": 10,
+  "rows": [
+    {
+      "id": "AUD-00010",
+      "timestamp": "2026-09-28T04:00:10.000Z",
+      "actor": "u-pi",
+      "role": "PI",
+      "entity_id": "AYU-002-S2",
+      "operation": "activateSite",
+      "reason": "Authenticated activateSite action recorded; free-text values withheld.",
+      "before": "null",
+      "after": "null"
+    },
+    {
+      "id": "AUD-00009",
+      "timestamp": "2026-09-28T04:00:09.000Z",
+      "actor": "u-pi",
+      "role": "PI",
+      "entity_id": "AYU-002-S2",
+      "operation": "readiness",
+      "reason": "Authenticated readiness action recorded; free-text values withheld.",
+      "before": "null",
+      "after": "null"
+    },
+    {
+      "id": "AUD-00008",
+      "timestamp": "2026-09-28T04:00:08.000Z",
+      "actor": "u-pi",
+      "role": "PI",
+      "entity_id": "AYU-002-S2",
+      "operation": "readiness",
+      "reason": "Authenticated readiness action recorded; free-text values withheld.",
+      "before": "null",
+      "after": "null"
+    },
+    {
+      "id": "AUD-00007",
+      "timestamp": "2026-09-28T04:00:07.000Z",
+      "actor": "u-ethics",
+      "role": "Ethics",
+      "entity_id": "DOC-RENEWAL",
+      "operation": "ethicsDecision",
+      "reason": "Authenticated ethicsDecision action recorded; free-text values withheld.",
+      "before": "null",
+      "after": "null"
+    },
+    {
+      "id": "AUD-00006",
+      "timestamp": "2026-09-28T04:00:06.000Z",
+      "actor": "u-pv",
+      "role": "PV",
+      "entity_id": "AE-011",
+      "operation": "pvReview",
+      "reason": "Authenticated pvReview action recorded; free-text values withheld.",
+      "before": "null",
+      "after": "null"
+    },
+    {
+      "id": "AUD-00005",
+      "timestamp": "2026-09-28T04:00:05.000Z",
+      "actor": "u-monitor",
+      "role": "Monitor",
+      "entity_id": "Q-007",
+      "operation": "queryVerify",
+      "reason": "Authenticated queryVerify action recorded; free-text values withheld.",
+      "before": "null",
+      "after": "null"
+    },
+    {
+      "id": "AUD-00004",
+      "timestamp": "2026-09-28T04:00:04.000Z",
+      "actor": "u-coord",
+      "role": "Coordinator",
+      "entity_id": "Q-007",
+      "operation": "queryAnswer",
+      "reason": "Authenticated queryAnswer action recorded; free-text values withheld.",
+      "before": "null",
+      "after": "null"
+    },
+    {
+      "id": "AUD-00003",
+      "timestamp": "2026-09-28T04:00:03.000Z",
+      "actor": "u-coord",
+      "role": "Coordinator",
+      "entity_id": "AYU-001-S1-001",
+      "operation": "safetyCreate",
+      "reason": "Authenticated safetyCreate action recorded; free-text values withheld.",
+      "before": "null",
+      "after": "null"
+    },
+    {
+      "id": "AUD-00002",
+      "timestamp": "2026-09-28T04:00:02.000Z",
+      "actor": "u-coord",
+      "role": "Coordinator",
+      "entity_id": "SCR-001",
+      "operation": "enroll",
+      "reason": "Authenticated enroll action recorded; free-text values withheld.",
+      "before": "null",
+      "after": "null"
+    },
+    {
+      "id": "AUD-00001",
+      "timestamp": "2026-09-28T04:00:01.000Z",
+      "actor": "u-coord",
+      "role": "Coordinator",
+      "entity_id": "SCR-001",
+      "operation": "consent",
+      "reason": "Authenticated consent action recorded; free-text values withheld.",
+      "before": "null",
+      "after": "null"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+TAP version 13
+# Subtest: 01 baseline reconciles participants, trial targets, unique sites, associations, AE and SAE
+ok 1 - 01 baseline reconciles participants, trial targets, unique sites, associations, AE and SAE
+  ---
+  duration_ms: 15.591922
+  type: 'test'
+  ...
+# Subtest: 02 all specified trial/site allocations derive from records
+ok 2 - 02 all specified trial/site allocations derive from records
+  ---
+  duration_ms: 10.105063
+  type: 'test'
+  ...
+# Subtest: 03 seeding is deterministic and references are valid
+ok 3 - 03 seeding is deterministic and references are valid
+  ---
+  duration_ms: 30.358652
+  type: 'test'
+  ...
+# Subtest: 04 missing consent blocks enrollment atomically with field-level reason
+ok 4 - 04 missing consent blocks enrollment atomically with field-level reason
+  ---
+  duration_ms: 31.673422
+  type: 'test'
+  ...
+# Subtest: 05 missing eligibility blocks enrollment even with consent
+ok 5 - 05 missing eligibility blocks enrollment even with consent
+  ---
+  duration_ms: 23.593738
+  type: 'test'
+  ...
+# Subtest: 06 enrollment is idempotent, creates protocol visits and persists across repository reload
+ok 6 - 06 enrollment is idempotent, creates protocol visits and persists across repository reload
+  ---
+  duration_ms: 88.599208
+  type: 'test'
+  ...
+# Subtest: 07 invalid version, invalid date, and future consent are rejected
+ok 7 - 07 invalid version, invalid date, and future consent are rejected
+  ---
+  duration_ms: 15.246321
+  type: 'test'
+  ...
+# Subtest: 08 paused recruitment blocks enrollment, not safety capture
+ok 8 - 08 paused recruitment blocks enrollment, not safety capture
+  ---
+  duration_ms: 35.298999
+  type: 'test'
+  ...
+# Subtest: 09 serious case requires criterion independently of severity
+ok 9 - 09 serious case requires criterion independently of severity
+  ---
+  duration_ms: 24.760355
+  type: 'test'
+  ...
+# Subtest: 10 serious report creates one linked urgent PV action and audit record
+ok 10 - 10 serious report creates one linked urgent PV action and audit record
+  ---
+  duration_ms: 39.495998
+  type: 'test'
+  ...
+# Subtest: 11 Coordinator cannot perform PV review; PV can request follow-up
+ok 11 - 11 Coordinator cannot perform PV review; PV can request follow-up
+  ---
+  duration_ms: 22.995357
+  type: 'test'
+  ...
+# Subtest: 12 safety transitions validate review before closure; reporting is local only
+ok 12 - 12 safety transitions validate review before closure; reporting is local only
+  ---
+  duration_ms: 47.518124
+  type: 'test'
+  ...
+# Subtest: 13 completing a visit resolves linked action and recalculates risk immediately
+ok 13 - 13 completing a visit resolves linked action and recalculates risk immediately
+  ---
+  duration_ms: 27.982545
+  type: 'test'
+  ...
+# Subtest: 14 query answering preserves previous value; monitor verification resolves underlying work
+ok 14 - 14 query answering preserves previous value; monitor verification resolves underlying work
+  ---
+  duration_ms: 34.22306
+  type: 'test'
+  ...
+# Subtest: 15 monitor cannot edit source visit observations
+ok 15 - 15 monitor cannot edit source visit observations
+  ---
+  duration_ms: 22.198698
+  type: 'test'
+  ...
+# Subtest: 16 readiness gates site activation without silently changing recruitment targets
+ok 16 - 16 readiness gates site activation without silently changing recruitment targets
+  ---
+  duration_ms: 34.411173
+  type: 'test'
+  ...
+# Subtest: 17 Regulator is denied every domain mutation permission at service layer
+ok 17 - 17 Regulator is denied every domain mutation permission at service layer
+  ---
+  duration_ms: 11.302344
+  type: 'test'
+  ...
+# Subtest: 18 restricted coordinator reads only assigned Varanasi participant/site records
+ok 18 - 18 restricted coordinator reads only assigned Varanasi participant/site records
+  ---
+  duration_ms: 13.307594
+  type: 'test'
+  ...
+# Subtest: 19 restricted coordinator cannot mutate an out-of-scope participant
+ok 19 - 19 restricted coordinator cannot mutate an out-of-scope participant
+  ---
+  duration_ms: 26.811692
+  type: 'test'
+  ...
+# Subtest: 20 trial/site filters reconcile participants, visits, safety, actions, reports, and assistant
+ok 20 - 20 trial/site filters reconcile participants, visits, safety, actions, reports, and assistant
+  ---
+  duration_ms: 11.994387
+  type: 'test'
+  ...
+# Subtest: 21 only Ethics Committee can approve submitted documents; history is retained
+ok 21 - 21 only Ethics Committee can approve submitted documents; history is retained
+  ---
+  duration_ms: 42.256953
+  type: 'test'
+  ...
+# Subtest: 22 Admin cannot complete IEC via a generic checklist action
+ok 22 - 22 Admin cannot complete IEC via a generic checklist action
+  ---
+  duration_ms: 84.273661
+  type: 'test'
+  ...
+# Subtest: 23 versioned synthetic uploads enforce file type and size limits
+ok 23 - 23 versioned synthetic uploads enforce file type and size limits
+  ---
+  duration_ms: 39.178249
+  type: 'test'
+  ...
+# Subtest: 24 required outstanding records block close-out
+ok 24 - 24 required outstanding records block close-out
+  ---
+  duration_ms: 42.658154
+  type: 'test'
+  ...
+# Subtest: 25 eligible new draft can traverse validated setup and close without deleting records
+ok 25 - 25 eligible new draft can traverse validated setup and close without deleting records
+  ---
+  duration_ms: 145.13696
+  type: 'test'
+  ...
+# Subtest: 26 invalid import batches cannot partially commit; duplicates are rechecked
+ok 26 - 26 invalid import batches cannot partially commit; duplicates are rechecked
+  ---
+  duration_ms: 36.591065
+  type: 'test'
+  ...
+# Subtest: 27 import cannot bypass consent/enrollment gates by importing Enrolled status
+ok 27 - 27 import cannot bypass consent/enrollment gates by importing Enrolled status
+  ---
+  duration_ms: 2.778163
+  type: 'test'
+  ...
+# Subtest: 28 corrupt and outdated persistence restores deterministic baseline with warning
+ok 28 - 28 corrupt and outdated persistence restores deterministic baseline with warning
+  ---
+  duration_ms: 42.146928
+  type: 'test'
+  ...
+# Subtest: 29 storage failure rolls back the entire mutation
+ok 29 - 29 storage failure rolls back the entire mutation
+  ---
+  duration_ms: 29.356684
+  type: 'test'
+  ...
+# Subtest: 30 assistant reflects current scoped store and acknowledges unsupported questions
+ok 30 - 30 assistant reflects current scoped store and acknowledges unsupported questions
+  ---
+  duration_ms: 45.390912
+  type: 'test'
+  ...
+# Subtest: 31 reset restores the exact baseline and is Admin-only
+ok 31 - 31 reset restores the exact baseline and is Admin-only
+  ---
+  duration_ms: 41.458833
+  type: 'test'
+  ...
+# Subtest: 32 zero expected enrollment and missing input are handled transparently
+ok 32 - 32 zero expected enrollment and missing input are handled transparently
+  ---
+  duration_ms: 2.933436
+  type: 'test'
+  ...
+# Subtest: 33 explicit pattern tasks are deduplicated and require PV authorization
+ok 33 - 33 explicit pattern tasks are deduplicated and require PV authorization
+  ---
+  duration_ms: 25.164833
+  type: 'test'
+  ...
+# Subtest: 34 CSV output quotes cells and neutralizes formula-leading content
+ok 34 - 34 CSV output quotes cells and neutralizes formula-leading content
+  ---
+  duration_ms: 0.337919
+  type: 'test'
+  ...
+# Subtest: 35 explicit user assignment updates immediately change read and write scope
+ok 35 - 35 explicit user assignment updates immediately change read and write scope
+  ---
+  duration_ms: 18.174621
+  type: 'test'
+  ...
+# Subtest: 36 existing trial mutation enforces trial identity scope, not just child record scope
+ok 36 - 36 existing trial mutation enforces trial identity scope, not just child record scope
+  ---
+  duration_ms: 19.051229
+  type: 'test'
+  ...
+# Subtest: 37 trial-level audit events are visible to assigned roles and preserve trial scope
+ok 37 - 37 trial-level audit events are visible to assigned roles and preserve trial scope
+  ---
+  duration_ms: 17.073102
+  type: 'test'
+  ...
+# Subtest: 38 pattern review task completion follows reviewed source cases
+ok 38 - 38 pattern review task completion follows reviewed source cases
+  ---
+  duration_ms: 58.587397
+  type: 'test'
+  ...
+# Subtest: 39 ethics completion tasks cannot be assigned to a role that cannot make the decision
+ok 39 - 39 ethics completion tasks cannot be assigned to a role that cannot make the decision
+  ---
+  duration_ms: 30.273274
+  type: 'test'
+  ...
+1..39
+# tests 39
+# suites 0
+# pass 39
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1367.568205

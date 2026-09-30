@@ -1,0 +1,40 @@
+AYUSETU — BOTH APPLICATION VERSIONS
+==================================
+Extract this ZIP before using either version.
+
+1. STANDALONE, OFFLINE PROTOTYPE
+-------------------------------
+Open AYUSETU.html in your browser.
+This is the original self-contained interactive CTMS prototype.
+It does NOT include server-verified authentication.
+
+2. AUTHENTICATED APPLICATION
+---------------------------
+The ayusetu-auth/ folder contains the compiled application, backend,
+editable source, tests, setup documentation, and demonstration walkthrough.
+It requires Python and Node.js. It must run through its included backend;
+do not double-click ayusetu-auth/dist/index.html or use a static web server.
+
+Quick start on macOS/Linux (from the extracted bundle directory):
+
+    cd ayusetu-auth
+    python3 -m venv .venv
+    source .venv/bin/activate
+    python -m pip install -r requirements.txt
+    python scripts/init_env.py
+    python -m server.run
+
+Then open http://127.0.0.1:5173/login in your browser.
+
+Read ayusetu-auth/README.md for prerequisites, Windows instructions,
+demo credentials, configuration, and important prototype limitations.
+
+Included documentation:
+    ayusetu-auth/docs/DEMO_WALKTHROUGH.md
+    ayusetu-auth/docs/TEST_REPORT.md
+    ayusetu-auth/docs/ARCHITECTURE.md
+
+Both versions use synthetic demonstration data. This bundle combines the
+previously delivered files; it does not merge the backend into the offline
+HTML or change either application's functionality. The existing test report
+is retained from that delivery; application tests were not rerun for bundling.
